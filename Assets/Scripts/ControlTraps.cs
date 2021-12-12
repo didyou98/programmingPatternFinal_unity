@@ -10,7 +10,6 @@ public class ControlTraps : MonoBehaviour
     int[] results = new int[10];
     int index = 0;
     int idx;
-    // Start is called before the first frame update;
     void Start()
     {
         
@@ -20,7 +19,6 @@ public class ControlTraps : MonoBehaviour
            transform.GetChild(i).GetChild(Random.Range(0, results[i])).GetComponent<BoxCollider>().isTrigger = true;
             index++;
         }
-        // preview.transform.GetChild(0).GetComponentInChildren<Image>().color = Color.red;
     }
 
     public int getHint()

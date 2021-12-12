@@ -8,7 +8,6 @@ public class Camera : MonoBehaviour
     public GameObject player;
     CommandKey command;
     bool flag;
-    // Start is called before the first frame update
     void Start()
     {
         flag = true;
@@ -29,10 +28,5 @@ public class Camera : MonoBehaviour
             flag = true;
         }
         
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
     }
 }
